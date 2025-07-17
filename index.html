@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+ <div class="chat-container">
+    <div class="chat-header">
+        <h2>Live Chat with Snap and Video</h2>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+        <!-- Messages will be displayed here -->
+    </div>
+    <div class="camera-container">
+        <video id="video" width="200" height="150" autoplay></video>
+        <button id="snap-btn">Take Snapshot</button>
+        <canvas id="canvas" width="200" height="150" style="display: none;"></canvas>
+        <img id="snapshot" src="" alt="Snapshot" style="display: none;">
+    </div>
+    <div class="chat-input">
+        <input type="text" id="message-input" placeholder="Type your message...">
+        <button id="send-btn">Send</button>
+    </div>
+</div>
+    
+
+
+<script src="test.js"></script>
+
+<script>
+    fetch('https://api.example.com/chat')
+        .then(response => response.json())
+        .then(data => {
+            // Process the chat data
+        })
+        
+</script>
+
+</body>
+</html>
